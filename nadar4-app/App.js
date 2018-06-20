@@ -17,12 +17,12 @@ const RootStack = createStackNavigator({
 })
 
 const RouteTab = createBottomTabNavigator({
-  Home: HomeScreen,
   Gallery: GalleryScreen,
+  Home: HomeScreen,
 }, {
   tabBarOptions: {
     style: {
-      backgroundColor: '#333',
+      backgroundColor: '#1F1F1F',
     },
     labelStyle: {
       fontFamily: 'KlinicSlabMedium',
