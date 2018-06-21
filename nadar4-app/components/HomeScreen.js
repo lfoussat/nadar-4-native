@@ -3,7 +3,6 @@ import { StyleSheet, Text, View, Button, Image, ImageBackground } from 'react-na
 import { Font } from 'expo'
 import '../assets/fonts/KlinicSlabMedium.otf'
 
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -63,6 +62,7 @@ class HomeScreen extends React.Component {
           </View>
           <View style={{ flex: 1 }}>
             <Image source={require('../assets/img/qr.png')} style={styles.image} />
+            <Button title="Animation" onPress={() => this.props.navigation.navigate('Animation')} />
           </View>
           <View style={styles.gifLine}>
             <Image source={require('../assets/img/nad-gif.gif')} style={styles.gif} />

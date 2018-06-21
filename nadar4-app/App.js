@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Button } from 'react-native'
 import HomeScreen from './components/HomeScreen.js'
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation'
 import GalleryScreen from './components/GalleryScreen.js'
+import AnimationScreen from './components/AnimationScreen.js'
 import { Font } from 'expo'
 import './assets/fonts/KlinicSlabMedium.otf'
 
@@ -13,12 +14,14 @@ const RootStack = createStackNavigator({
       headerVisible: false
     }
   },
-  Gallery: GalleryScreen
+  Gallery: GalleryScreen,
+  Animation: AnimationScreen
 })
 
 const RouteTab = createBottomTabNavigator({
-  Gallery: GalleryScreen,
   Home: HomeScreen,
+  Animation: AnimationScreen,
+  Gallery: GalleryScreen,
 }, {
   tabBarOptions: {
     style: {
