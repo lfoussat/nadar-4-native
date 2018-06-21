@@ -50,7 +50,11 @@ const GalleryContent = ({ content, style, setModalVisible, visible }) =>
           </View>
         </View>
       </Modal>
-      <TouchableHighlight onPress={() => setModalVisible(content.id)}>
+      <TouchableHighlight onPress={() => {
+        if (content.lock === false) {
+          setModalVisible(content.id)
+        }}
+      }>
         <Image source={content.image} />
       </TouchableHighlight>
       <Text style={styles.date}>{content.date}</Text>

@@ -18,7 +18,7 @@ class AnimationScreen extends React.Component {
     return (
       <View style={styles.container}>
       	<Video
-      	  source={require('../assets/anim/anim.mp4')}
+      	  source={require('../assets/anim/anim-demo.mp4')}
                 shouldPlay
       	  resizeMode="cover"
       	  style={{ width, height: 650, marginTop: -150 }}

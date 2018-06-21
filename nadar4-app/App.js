@@ -7,20 +7,24 @@ import AnimationScreen from './components/AnimationScreen.js'
 import { Font } from 'expo'
 import './assets/fonts/KlinicSlabMedium.otf'
 
-const RootStack = createStackNavigator({
+const HomeStack = createStackNavigator({
   Home: {
     screen: HomeScreen,
     navigationOptions: {
-      headerVisible: false
+      header: null
     }
   },
-  Gallery: GalleryScreen,
-  Animation: AnimationScreen
+  Animation: {
+    screen: AnimationScreen,
+    navigationOptions: {
+      header: null,
+      tabBarVisible: false
+    }
+  }
 })
 
 const RouteTab = createBottomTabNavigator({
-  Home: HomeScreen,
-  Animation: AnimationScreen,
+  Home: HomeStack,
   Gallery: GalleryScreen,
 }, {
   tabBarOptions: {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View, Button, Image, ImageBackground } from 'react-native'
+import { StyleSheet, Text, View, Button, Image, ImageBackground, TouchableHighlight } from 'react-native'
 import { Font } from 'expo'
 import '../assets/fonts/KlinicSlabMedium.otf'
 
@@ -61,8 +61,10 @@ class HomeScreen extends React.Component {
             <Text style={styles.scan}>SCAN YOUR QR CODE</Text>
           </View>
           <View style={{ flex: 1 }}>
-            <Image source={require('../assets/img/qr.png')} style={styles.image} />
-            <Button title="Animation" onPress={() => this.props.navigation.navigate('Animation')} />
+            <TouchableHighlight onPress={() => {this.props.navigation.navigate('Animation')
+            setTimeout(() => this.props.navigation.navigate('Gallery', { modalVisible: 2 }), 39000)}}> 
+              <Image source={require('../assets/img/qr.png')} style={styles.image} />
+            </TouchableHighlight>
           </View>
           <View style={styles.gifLine}>
             <Image source={require('../assets/img/nad-gif.gif')} style={styles.gif} />
