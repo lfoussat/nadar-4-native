@@ -14,6 +14,7 @@ class AnimationScreen extends React.Component {
 
   render() {
     const { width } = Dimensions.get('window')
+    console.log(width);
 
     return (
       <View style={styles.container}>

@@ -23,9 +23,9 @@ class GalleryScreen extends React.Component {
         id: 1,
         title: 'CONCOURS AGRICOLE UNIVERSEL',
         image: require('../assets/img/gallery/Bovin.png'),
-        date: '1956',
+        date: '1860',
         author: 'Félix Nadar',
-        description: 'Oui, cette photo est bien une photo que Christopher ne comprends pas... Point.',
+        description: 'Oui, cette photo a bien permis une avancée scientifique grâce à la photo de bovins et ovins',
         alignItems: 'flex-start',
         flexDirection: 'row',
         lock: false
@@ -36,7 +36,7 @@ class GalleryScreen extends React.Component {
         image: require('../assets/img/gallery/Bernhartd-locked.png'),
         date: '1864',
         author: 'Félix Nadar',
-        description: 'Oui, cette photo est bien une photo que Christopher ne comprends pas... Point.',
+        description: 'Avant d\’être connue, elle savait que se faire photographier lui permettrait d\’atteindre une certaine notoriété',
         alignItems: 'flex-end',
         flexDirection: 'row-reverse',
         lock: true
